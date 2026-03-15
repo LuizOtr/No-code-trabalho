@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Identidade Visual — App Bíblico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Definindo variáveis CSS baseadas na paleta do App */
+            /* Modo Claro */
+            --claro-azul-profundo: #1B3F6B;
+            --claro-dourado-ambar: #C9972A;
+            --claro-verde-oliva: #4A6741;
+            --claro-roxo-suave: #5C3D6E;
+            --claro-pergaminho: #F7F4EE;
+            --claro-branco: #FFFFFF;
+            --claro-cinza-medio: #7A7A7A;
+            --claro-areia: #E0DAD0;
+
+            /* Modo Escuro */
+            --escuro-azul-vivo: #4A90D9;
+            --escuro-dourado-luminoso: #E8B84B;
+            --escuro-verde-suave: #7BAD6E;
+            --escuro-roxo-medio: #9B6FB8;
+            --escuro-noite-profunda: #12151A;
+            --escuro-azul-carvao: #1E2330;
+            --escuro-cinza-suave: #9AA3B2;
+            --escuro-azul-ardosia: #2C3347;
+
+            /* Configurações Gerais */
+            --font-titulos: 'Lora', serif;
+            --font-corpo: 'Nunito', sans-serif;
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 48px;
+            --spacing-xl: 80px;
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: var(--font-corpo);
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Estrutura */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+
+        header {
+            border-bottom: 2px solid var(--claro-areia);
+            padding-bottom: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        h1 {
+            font-family: var(--font-titulos);
+            font-weight: 700;
+            font-size: 40px;
+            color: var(--claro-azul-profundo);
+            margin: 0;
+        }
+
+        h2 {
+            font-family: var(--font-titulos);
+            font-weight: 600;
+            font-size: 28px;
+            color: var(--claro-azul-profundo);
+            margin-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-md);
+            border-left: 5px solid var(--claro-dourado-ambar);
+            padding-left: var(--spacing-sm);
+        }
+
+        h3 {
+            font-family: var(--font-corpo);
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        p {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* Sumário */
+        .sumario {
+            background-color: var(--claro-branco);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .sumario h3 { margin-top: 0; }
+        .sumario ul { list-style: none; padding: 0; }
+        .sumario li { margin-bottom: var(--spacing-xs); }
+        .sumario a { text-decoration: none; color: var(--claro-azul-profundo); font-weight: 600; }
+        .sumario a:hover { color: var(--claro-dourado-ambar); }
+
+        /* Seções */
+        section {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .section-intro {
+            font-size: 18px;
+            color: #555;
+            max-width: 700px;
+        }
+
+        /* Cores */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .color-card {
+            background-color: var(--claro-branco);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .color-swatch {
+            height: 120px;
+            width: 100%;
+        }
+
+        .color-info {
+            padding: var(--spacing-sm);
+        }
+
+        .color-name {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .color-hex {
+            font-family: monospace;
+            color: #666;
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .color-use {
+            font-size: 13px;
+            color: #777;
+            margin-top: 8px;
+        }
+
+        .theme-label {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #999;
+            margin-bottom: var(--spacing-sm);
+            display: block;
+        }
+
+        /* Proporção */
+        .proportion-bar {
+            display: flex;
+            height: 40px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            margin-bottom: var(--spacing-sm);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .proportion-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .proportion-legend ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        .proportion-legend li {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        /* Tipografia */
+        .type-example {
+            margin-bottom: var(--spacing-md);
+            background: white;
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+        }
+
+        .font-spec {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: var(--spacing-sm);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 4px;
+        }
+
+        /* Tabelas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: var(--spacing-md);
+            background-color: var(--claro-branco);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            text-align: left;
+            padding: var(--spacing-sm);
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: 700;
+        }
+
+        /* Combinações */
+        .example-box {
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary-claro {
+            background-color: var(--claro-azul-profundo);
+            color: var(--claro-branco);
+            font-family: var(--font-corpo);
+            font-weight: 700;
+            font-size: 15sp; /* sp não existe em CSS, usei px aproximado */
+            font-size: 15px; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .btn-primary-escuro {
+            background-color: var(--escuro-azul-vivo);
+            color: var(--claro-branco);
+            font-family: var(--font-corpo);
+            font-weight: 700;
+            font-size: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .progress-bar {
+            height: 8px;
+            border-radius: 4px;
+            width: 100%;
+            margin: var(--spacing-xs) 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            color: white;
+            font-family: var(--font-corpo);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        /* Diretrizes */
+        .check-list { list-style: none; padding: 0; }
+        .check-list li::before { content: "✓ "; color: #2ecc71; font-weight: bold; margin-right: 8px; }
+        
+        .avoid-list { list-style: none; padding: 0; }
+        .avoid-list li::before { content: "✗ "; color: #e74c3c; font-weight: bold; margin-right: 8px; }
+
+        footer {
+            margin-top: var(--spacing-xl);
+            border-top: 1px solid var(--claro-areia);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Classes Utilitárias de Cor */
+        .bg-claro-azul-profundo { background-color: var(--claro-azul-profundo); }
+        .bg-claro-dourado-ambar { background-color: var(--claro-dourado-ambar); }
+        .bg-claro-verde-oliva { background-color: var(--claro-verde-oliva); }
+        .bg-claro-roxo-suave { background-color: var(--claro-roxo-suave); }
+        .bg-claro-pergaminho { background-color: var(--claro-pergaminho); }
+        .bg-claro-branco { background-color: var(--claro-branco); }
+        .bg-claro-cinza-medio { background-color: var(--claro-cinza-medio); }
+        .bg-claro-areia { background-color: var(--claro-areia); }
+        .bg-escuro-azul-vivo { background-color: var(--escuro-azul-vivo); }
+        .bg-escuro-dourado-luminoso { background-color: var(--escuro-dourado-luminoso); }
+        .bg-escuro-verde-suave { background-color: var(--escuro-verde-suave); }
+        .bg-escuro-roxo-medio { background-color: var(--escuro-roxo-medio); }
+        .bg-escuro-noite-profunda { background-color: var(--escuro-noite-profunda); color: #eee; }
+        .bg-escuro-azul-carvao { background-color: var(--escuro-azul-carvao); color: #eee; }
+        .bg-escuro-cinza-suave { background-color: var(--escuro-cinza-suave); }
+        .bg-escuro-azul-ardosia { background-color: var(--escuro-azul-ardosia); }
+
+        .text-claro-azul-profundo { color: var(--claro-azul-profundo); }
+        .text-claro-dourado-ambar { color: var(--claro-dourado-ambar); }
+        .text-escuro-dourado-luminoso { color: var(--escuro-dourado-luminoso); }
+        .text-escuro-cinza-suave { color: var(--escuro-cinza-suave); }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Guia de Identidade Visual</h1>
+        <p>App Bíblico — Cores, Tipografia & Aplicações | v1.0</p>
+    </header>
+
+    <div class="sumario">
+        <h3>Sumário</h3>
+        <ul>
+            <li><a href="#conceito">Conceito</a></li>
+            <li><a href="#cores-primarias">Cores Primárias</a></li>
+            <li><a href="#cores-secundarias">Cores Secundárias</a></li>
+            <li><a href="#cores-apoio">Cores de Apoio</a></li>
+            <li><a href="#proporcao">Proporção de Uso</a></li>
+            <li><a href="#tipografia">Tipografia</a></li>
+            <li><a href="#combinacoes">Combinações Recomendadas</a></li>
+            <li><a href="#acessibilidade">Acessibilidade</a></li>
+            <li><a href="#diretrizes">Diretrizes de Uso</a></li>
+        </ul>
+    </div>
+
+    <section id="conceito">
+        <h2>Conceito</h2>
+        <p class="section-intro">Este documento define as bases visuais do aplicativo bíblico. Todas as decisões foram tomadas com o usuário como pilar central, priorizando acolhimento, legibilidade e acessibilidade — tanto no modo claro quanto no escuro.</p>
+        <p>A paleta foi construída para transmitir serenidade, confiança e pertencimento espiritual. O visual é contemporâneo e acessível, conversando com um público moderno sem perder a profundidade do tema. As cores remetem ao céu, à luz, à natureza e ao sagrado — referências universais na tradição bíblica.</p>
+    </section>
+
+    <section id="cores-primarias">
+        <h2>Cores Primárias</h2>
+        <p>Usadas em botões de ação principal, barra de navegação, ícone do app e versículos em destaque.</p>
+        
+        <span class="theme-label">☀️ Modo Claro</span>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch bg-claro-azul-profundo"></div>
+                <div class="color-info">
+                    <div class="color-name">Azul Profundo</div>
+                    <span class="color-hex">#1B3F6B</span>
+                    <div class="color-use">Cor âncora da identidade.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-claro-dourado-ambar"></div>
+                <div class="color-info">
+                    <div class="color-name">Dourado Âmbar</div>
+                    <span class="color-hex">#C9972A</span>
+                    <div class="color-use">Destaques e versículos em evidência.</div>
+                </div>
+            </div>
+        </div>
+
+        <span class="theme-label">🌙 Modo Escuro</span>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch bg-escuro-azul-vivo"></div>
+                <div class="color-info">
+                    <div class="color-name">Azul Vivo</div>
+                    <span class="color-hex">#4A90D9</span>
+                    <div class="color-use">Contraste sobre fundo escuro.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-escuro-dourado-luminoso"></div>
+                <div class="color-info">
+                    <div class="color-name">Dourado Luminoso</div>
+                    <span class="color-hex">#E8B84B</span>
+                    <div class="color-use">Mais brilho sobre fundos escuros.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cores-secundarias">
+        <h2>Cores Secundárias</h2>
+        <p>Usadas em badges de progresso de leitura, tags de categoria, ícones temáticos e destaques pontuais. Nunca como cor dominante de uma tela inteira.</p>
+        
+        <span class="theme-label">☀️ Modo Claro</span>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch bg-claro-verde-oliva"></div>
+                <div class="color-info">
+                    <div class="color-name">Verde Oliva</div>
+                    <span class="color-hex">#4A6741</span>
+                    <div class="color-use">Natureza, árvore da vida. Badges de progresso.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-claro-roxo-suave"></div>
+                <div class="color-info">
+                    <div class="color-name">Roxo Suave</div>
+                    <span class="color-hex">#5C3D6E</span>
+                    <div class="color-use">Espiritualidade, realeza. Tags de categoria.</div>
+                </div>
+            </div>
+        </div>
+
+        <span class="theme-label">🌙 Modo Escuro</span>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch bg-escuro-verde-suave"></div>
+                <div class="color-info">
+                    <div class="color-name">Verde Suave</div>
+                    <span class="color-hex">#7BAD6E</span>
+                    <div class="color-use">Badges de progresso de leitura.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-escuro-roxo-medio"></div>
+                <div class="color-info">
+                    <div class="color-name">Roxo Médio</div>
+                    <span class="color-hex">#9B6FB8</span>
+                    <div class="color-use">Destaque de categorias.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cores-apoio">
+        <h2>Cores de Apoio</h2>
+        <p>Usadas em fundos, bordas, divisores e textos secundários. São a base estrutural da interface e nunca devem competir com as cores primárias ou secundárias.</p>
+        
+        <span class="theme-label">☀️ Modo Claro</span>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch bg-claro-pergaminho" style="border-bottom: 1px solid #eee;"></div>
+                <div class="color-info">
+                    <div class="color-name">Pergaminho</div>
+                    <span class="color-hex">#F7F4EE</span>
+                    <div class="color-use">Fundo principal para leitura longa.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-claro-branco" style="border-bottom: 1px solid #eee;"></div>
+                <div class="color-info">
+                    <div class="color-name">Branco</div>
+                    <span class="color-hex">#FFFFFF</span>
+                    <div class="color-use">Fundo de cards e modais.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-claro-cinza-medio"></div>
+                <div class="color-info">
+                    <div class="color-name">Cinza Médio</div>
+                    <span class="color-hex">#7A7A7A</span>
+                    <div class="color-use">Textos secundários e legendas.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-claro-areia"></div>
+                <div class="color-info">
+                    <div class="color-name">Areia</div>
+                    <span class="color-hex">#E0DAD0</span>
+                    <div class="color-use">Bordas, divisores e separadores.</div>
+                </div>
+            </div>
+        </div>
+
+        <span class="theme-label">🌙 Modo Escuro</span>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch bg-escuro-noite-profunda"></div>
+                <div class="color-info">
+                    <div class="color-name">Noite Profunda</div>
+                    <span class="color-hex">#12151A</span>
+                    <div class="color-use">Fundo principal.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-escuro-azul-carvao"></div>
+                <div class="color-info">
+                    <div class="color-name">Azul Carvão</div>
+                    <span class="color-hex">#1E2330</span>
+                    <div class="color-use">Fundo de cards e modais.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-escuro-cinza-suave"></div>
+                <div class="color-info">
+                    <div class="color-name">Cinza Suave</div>
+                    <span class="color-hex">#9AA3B2</span>
+                    <div class="color-use">Textos secundários e legendas.</div>
+                </div>
+            </div>
+            <div class="color-card">
+                <div class="color-swatch bg-escuro-azul-ardosia"></div>
+                <div class="color-info">
+                    <div class="color-name">Azul Ardósia</div>
+                    <span class="color-hex">#2C3347</span>
+                    <div class="color-use">Bordas, divisores e separadores.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proporcao">
+        <h2>Proporção de Uso</h2>
+        <p>A proporção garante coerência visual entre as telas. Cores de apoio dominam a estrutura enquanto as primárias criam identidade e as secundárias adicionam pontos de destaque.</p>
+        
+        <div class="proportion-bar">
+            <div class="proportion-item bg-claro-areia text-claro-azul-profundo" style="width: 60%;">60%</div>
+            <div class="proportion-item bg-claro-azul-profundo" style="width: 25%;">25%</div>
+            <div class="proportion-item bg-claro-dourado-ambar" style="width: 10%;">10%</div>
+            <div class="proportion-item bg-claro-verde-oliva" style="width: 5%;">5%</div>
+        </div>
+        
+        <div class="proportion-legend">
+            <ul>
+                <li><span class="legend-dot bg-claro-areia" style="border: 1px solid #ccc;"></span> Cores de Apoio (60%)</li>
+                <li><span class="legend-dot bg-claro-azul-profundo"></span> Azul Profundo (25%)</li>
+                <li><span class="legend-dot bg-claro-dourado-ambar"></span> Dourado Âmbar (10%)</li>
+                <li><span class="legend-dot bg-claro-verde-oliva"></span> Secundárias (5%)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="tipografia">
+        <h2>Tipografia</h2>
+        
+        <h3>Lora — Títulos & Versículos em Destaque</h3>
+        <p>Serifa contemporânea com raízes caligráficas. Transmite a solenidade e tradição do texto bíblico sem parecer datada, garantindo excelente legibilidade para citações.</p>
+        
+        <div class="type-example" style="font-family: var(--font-titulos);">
+            <div class="font-spec">Lora Bold | 26–28sp | Título de Tela</div>
+            <div style="font-weight: 700; font-size: 28px; color: var(--claro-azul-profundo);">O Princípio da Sabedoria</div>
+        </div>
+
+        <div class="type-example" style="font-family: var(--font-titulos);">
+            <div class="font-spec">Lora Italic Regular | 18sp | Versículo em Destaque</div>
+            <div style="font-style: italic; font-size: 18px; color: var(--claro-azul-profundo);">"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito..."</div>
+        </div>
+
+        <h3>Nunito — Interface & Texto Corrido</h3>
+        <p>Sans-serif arredondada, leve e altamente legível. Ideal para a navegação, elementos de UI e para a leitura longa do texto bíblico padrão dentro dos capítulos.</p>
+        
+        <div class="type-example" style="font-family: var(--font-corpo);">
+            <div class="font-spec">Nunito Regular | 16sp | Texto Corrido (Leitura)</div>
+            <p style="font-size: 16px;">No princípio, criou Deus os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava por sobre as águas.</p>
+        </div>
+
+        <div class="type-example" style="font-family: var(--font-corpo);">
+            <div class="font-spec">Nunito Bold | 15sp | Botão de Ação</div>
+            <button class="btn-primary-claro">Continuar Leitura</button>
+        </div>
+
+        <h3>Hierarquia Tipográfica Summary</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Fonte</th>
+                    <th>Peso</th>
+                    <th>Tamanho</th>
+                    <th>Uso Principal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Título de Tela</td>
+                    <td>Lora</td>
+                    <td>Bold</td>
+                    <td>26–28sp</td>
+                    <td>Títulos principais de seções ou livros.</td>
+                </tr>
+                <tr>
+                    <td>Subtítulo de Seção</td>
+                    <td>Lora</td>
+                    <td>Regular</td>
+                    <td>18–20sp</td>
+                    <td>Cabeçalhos dentro de uma tela.</td>
+                </tr>
+                <tr>
+                    <td>Versículo em Destaque</td>
+                    <td>Lora</td>
+                    <td>Italic</td>
+                    <td>18sp</td>
+                    <td>Citações bíblicas em cards ou topo de tela.</td>
+                </tr>
+                <tr>
+                    <td>Texto Corrido</td>
+                    <td>Nunito</td>
+                    <td>Regular</td>
+                    <td>16sp</td>
+                    <td>Leitura de capítulos e descrições.</td>
+                </tr>
+                <tr>
+                    <td>Label de Botão</td>
+                    <td>Nunito</td>
+                    <td>Bold</td>
+                    <td>15sp</td>
+                    <td>Botões de ação principal.</td>
+                </tr>
+                <tr>
+                    <td>Texto Secundário</td>
+                    <td>Nunito</td>
+                    <td>Regular</td>
+                    <td>13sp</td>
+                    <td>Legendas, referências bibliográficas.</td>
+                </tr>
+                <tr>
+                    <td>Tag / Badge</td>
+                    <td>Nunito</td>
+                    <td>SemiBold</td>
+                    <td>12sp</td>
+                    <td>Categorias, status de progresso.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="combinacoes">
+        <h2>Combinações Recomendadas</h2>
+        
+        <h3>Versículo em Destaque — Modo Claro</h3>
+        <div class="example-box bg-claro-pergaminho">
+            <p style="font-family: var(--font-titulos); font-style: italic; font-size: 18px; color: var(--claro-azul-profundo);">"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."</p>
+            <p style="font-family: var(--font-corpo); font-weight: 700; font-size: 13px; color: var(--claro-dourado-ambar); margin-top: 8px;">João 3:16</p>
+            <button class="btn-primary-claro" style="margin-top: 16px;">Salvar Versículo</button>
+        </div>
+
+        <h3>Versículo em Destaque — Modo Escuro</h3>
+        <div class="example-box bg-escuro-azul-carvao">
+            <p style="font-family: var(--font-titulos); font-style: italic; font-size: 18px; color: var(--claro-branco);">"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."</p>
+            <p style="font-family: var(--font-corpo); font-weight: 700; font-size: 13px; color: var(--escuro-dourado-luminoso); margin-top: 8px;">João 3:16</p>
+            <button class="btn-primary-escuro" style="margin-top: 16px;">Salvar Versículo</button>
+        </div>
+
+        <h3>Card de Progresso de Leitura</h3>
+        <div class="example-box bg-claro-branco">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="font-family: var(--font-titulos); margin: 0; color: var(--claro-azul-profundo);">Salmos</h4>
+                <span class="badge bg-claro-verde-oliva">Em andamento</span>
+            </div>
+            <div class="progress-bar bg-claro-areia">
+                <div class="progress-fill bg-claro-dourado-ambar" style="width: 65%; height: 100%; border-radius: 4px;"></div>
+            </div>
+            <p style="font-family: var(--font-corpo); font-size: 13px; color: var(--claro-cinza-medio); margin: 0;">65% concluído · 97 de 150 capítulos</p>
+        </div>
+    </section>
+
+    <section id="acessibilidade">
+        <h2>Acessibilidade</h2>
+        <p>Acessibilidade é um pilar central deste app. As escolhas de cor e tipografia visam garantir que a Palavra seja acessível a todos, independentemente de limitações visuais ou condições de iluminação.</p>
+        <ul>
+            <li>Todos os pares de contraste de texto (Primária sobre Apoio, Secundária sobre Apoio) foram validados para atender ao padrão <strong>WCAG AA (mínimo de 4.5:1)</strong>.</li>
+            <li>A fonte <strong>Lora Italic</strong> para versículos usa o <strong>Azul Profundo (#1B3F6B)</strong> em vez de preto puro para reduzir o contraste excessivo, que pode ser fatigante, mantendo excelente legibilidade.</li>
+            <li>O fundo <strong>Pergaminho (#F7F4EE)</strong> no modo claro é mais suave que o branco puro (#FFFFFF), ideal para sessões longas de leitura bíblica, reduzindo o brilho e o cansaço visual.</li>
+        </ul>
+    </section>
+
+    <section id="diretrizes">
+        <h2>Diretrizes de Uso</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+            <div>
+                <h3>✓ Faça</h3>
+                <ul class="check-list">
+                    <li>Use o fundo Pergaminho para telas de leitura bíblica longa.</li>
+                    <li>Combine Lora em itálico com Dourado nas referências de versículos.</li>
+                    <li>Reserve as cores secundárias para elementos pontuais como badges de status.</li>
+                    <li>Mantenha a hierarquia tipográfica consistente em todas as telas.</li>
+                    <li>Valide o contraste WCAG AA antes de publicar novos componentes.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>✗ Evite</h3>
+                <ul class="avoid-list">
+                    <li>Usar Verde Oliva ou Roxo como cor de fundo dominante de uma tela inteira.</li>
+                    <li>Combinar Dourado com Branco puro sem controle rigoroso de peso e tamanho.</li>
+                    <li>Usar Lora em textos corridos longos — prefira Nunito.</li>
+                    <li>Usar Nunito como fonte de títulos principais de livros ou seções.</li>
+                    <li>Inverter a proporção — o Azul Profundo deve sempre dominar sobre as demais cores de identidade.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>App Bíblico · Identidade Visual v1.0 · Documento de referência interno</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
