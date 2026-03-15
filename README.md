@@ -1,119 +1,42 @@
-# Desenvolvimento de Aplicação com No-Code
+# App Bíblico - Projeto No-Code
 
-**Data de entrega: 07/04/2026**
+**Data de entrega:** 07/04/2026
 
-## Objetivo
+Projeto desenvolvido para a avaliação de Desenvolvimento de Aplicação com No-Code. O objetivo é projetar um sistema digital simples aplicando conceitos de Design de Interação (IxD), organização de interface e experiência do usuário.
 
-Projetar e desenvolver uma aplicação digital simples utilizando uma plataforma no-code, aplicando conceitos básicos de Design de Interação (IxD), organização de interface e experiência do usuário.
+## 🔗 Links do Projeto
 
-O trabalho tem como objetivo que os alunos desenvolvam a capacidade de:
+- 📱 **Aplicativo (Glide):** [Acessar o App](https://go.glideapps.com/app/GHj7fdsfTEwssvwLFSAC/layout)
+- 🎨 **Guia de Identidade Visual:** [Acessar Guia de Estilos](./identidade_visual.html)
+- 🗺️ **Quadro e Fluxos (Miro):** [Acessar Miro](https://miro.com/app/board/uXjVGx7q2A0=/?share_link_id=729034125999)
 
-- Estruturar um pequeno sistema digital
-- Criar interfaces claras e intuitivas
-- Aplicar elementos básicos de interação humano-computador
-- Utilizar ferramentas visuais de desenvolvimento
+## 📚 Recursos de Apoio
 
-Não é necessário realizar programação tradicional.
+Se você nunca utilizou o Glide ou o Miro, consulte os materiais abaixo para começar:
 
----
+### Glide (Criação do App)
+- 🎥 **Vídeo:** [Tutorial Glide Apps para Iniciantes (YouTube)](https://www.youtube.com/results?search_query=glide+apps+tutorial+iniciante+pt+br)
+- 📖 **Artigo:** [Documentação Oficial do Glide (Inglês - use o tradutor do navegador)](https://www.glideapps.com/docs)
 
-## Descrição do Trabalho
-
-Cada aluno ou grupo deverá desenvolver uma aplicação simples utilizando uma ferramenta no-code ou low-code.
-
-**Ferramentas sugeridas:**
-
-- Glide
-- Bubble
-- FlutterFlow
-- Microsoft Power Apps
-
-A escolha da ferramenta é livre.
+### Miro (Fluxos e Organização)
+- 🎥 **Vídeo:** [Como usar o Miro - Passo a Passo (YouTube)](https://www.youtube.com/results?search_query=como+usar+o+miro+tutorial+iniciante)
+- 📖 **Artigo:** [Guia Oficial de Primeiros Passos no Miro (Em Português)](https://help.miro.com/hc/pt-br/articles/360017730233-Primeiros-passos-no-Miro)
 
 ---
 
-## Tema da Aplicação
+## Sobre a Aplicação
 
-O tema é livre, desde que seja um sistema simples. Exemplos: gerenciador de tarefas, agenda de eventos, catálogo de produtos, aplicativo de receitas, controle de estudos ou aplicativo de recomendações.
+O **App Bíblico** foi desenvolvido utilizando a plataforma no-code **Glide**. A interface foi projetada para transmitir serenidade, confiança e pertencimento espiritual, priorizando o acolhimento, legibilidade e acessibilidade.
 
----
+### Estrutura do Sistema
+1. **Home:** Apresentação do sistema, versículo em destaque e acesso rápido.
+2. **Leitura (Detalhes):** Tela focada em leitura longa com fundo "pergaminho" para conforto visual.
+3. **Livros (Listagem):** Navegação e busca estruturada.
+4. **Progresso:** Acompanhamento de leitura com badges de status.
+5. **Perfil/Configurações:** Preferências do usuário e escolha de temas (Claro/Escuro).
 
-## Requisitos do Projeto
-
-A aplicação deve possuir pelo menos 5 telas. Exemplo de estrutura:
-
-- **Tela inicial (Home)** — Apresentação do sistema e acesso às funcionalidades.
-- **Tela de cadastro** — Formulário para inserir informações.
-- **Tela de listagem** — Visualização dos dados cadastrados.
-- **Tela de detalhes** — Informações detalhadas de um item.
-- **Tela de perfil ou configurações**
-- Outras telas podem ser adicionadas conforme a proposta do sistema.
-
----
-
-## Elementos de Interface
-
-O sistema deve utilizar elementos básicos de interação, como botões, menus ou barra de navegação, formulários, listas ou cartões de informação e ícones ou elementos visuais de apoio.
-
-Esses elementos devem facilitar a interação do usuário com o sistema.
-
----
-
-## Elementos de Design de Interação (IxD)
-
-Durante o desenvolvimento, os alunos devem considerar os seguintes princípios:
-
-### 1. Clareza da interação
-
-O usuário deve entender facilmente onde clicar, o que cada botão faz e como navegar entre as telas.
-
-### 2. Feedback do sistema
-
-A interface deve mostrar respostas às ações do usuário, por exemplo: mensagem após cadastro, mudança de tela após clicar em um botão ou confirmação de ação realizada.
-
-### 3. Consistência
-
-Elementos semelhantes devem funcionar da mesma forma em todas as telas. Exemplo: botões com mesma cor para ações semelhantes e menus organizados de maneira consistente.
-
-### 4. Navegação simples
-
-O usuário deve conseguir navegar entre as telas sem se perder. Exemplo: menu principal, botão voltar e organização lógica das telas.
-
-### 5. Usabilidade
-
-A aplicação deve apresentar navegação clara, textos simples, organização visual adequada e facilidade de uso. O usuário deve conseguir entender o funcionamento do sistema rapidamente.
-
----
-
-## Entrega
-
-Os alunos devem entregar:
-
-1. **Link do aplicativo** — Link público do projeto criado na plataforma.
-2. **Documento curto (5 a 7 páginas)** contendo:
-    - Nome do aplicativo
-    - Objetivo do sistema
-    - Ferramenta utilizada
-    - Descrição das telas criadas
-    - Prints das telas principais
-    - Explicação breve de como os princípios de interação foram considerados
-
----
-
-## Critérios de Avaliação
-
-| Critério | Pontos |
-| --- | --- |
-| Funcionamento da aplicação | 3 |
-| Organização e clareza das telas | 2 |
-| Navegação e interação | 2 |
-| Aplicação de princípios de IxD | 2 |
-| Documento entregue | 1 |
-
----
-
-## Observações
-
-- O trabalho pode ser desenvolvido individualmente ou em grupos de até 4 alunos.
-- O aplicativo não precisa ser complexo, mas deve demonstrar estrutura de sistema e interação com o usuário.
-- O foco da atividade é aprender a construir aplicações e interfaces utilizando plataformas no-code ou low-code aplicando princípios básicos de Design de Interação.
+### Princípios de IxD (Design de Interação) Aplicados
+- **Clareza e Usabilidade:** Tipografia separada por intenção (Lora para títulos solenes e versículos; Nunito para leitura fluida e botões).
+- **Consistência:** Padrões visuais rígidos controlados pelo nosso Guia de Identidade Visual (proporção 60/25/10/5).
+- **Acessibilidade:** Cores validadas no padrão WCAG AA (mínimo de 4.5:1 de contraste), garantindo leitura sem fadiga visual.
+- **Feedback:** Barras de progresso e tags visuais (ex: Verde Oliva para "Em andamento").
